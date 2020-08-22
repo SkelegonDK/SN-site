@@ -1,3 +1,7 @@
+//TODO: consolidate html to JS loading
+// TODO: add Loading Splash Screen
+
+
 if ($(window).width() > 600) {
 	//Add your javascript for large screens here
 	! function () {
