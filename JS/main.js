@@ -1,6 +1,13 @@
 //TODO: consolidate html to JS loading
 // TODO: add Loading Splash Screen
-						 
+var images = fetch("JSON\data.json")
+.then(data => console.table(data));
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}						 
 if ($(window).width() > 600) {
 	//Add your javascript for large screens here
 	! function () {
