@@ -14,9 +14,16 @@ body {
 	width: 100%;
 	height: 100%;
 }
-
+a {text-decoration: none;}
+#splash {
+	display: none;
+	z-index: 99999 !important;
+	 background-color: #000000;
+}
 
 .text {
+	text-align: center;
+	text-decoration: none !important;
     color: lime;
     font-size: 2rem;
 }
@@ -24,7 +31,9 @@ body {
     font-size: 50px;
     text-align: center;
 } 
+
 #screen {
+	display: block;
 	position: absolute;
 	left:0;
 	top:0;
@@ -66,7 +75,7 @@ body {
 
 .glitch-text {
 	text-rendering: geometricPrecision;
-text-shadow: 1px 1px 0 cyan, -1px -1px 0 magenta;
+	text-shadow: 1px 1px 0 cyan, -1px -1px 0 magenta;
 }
 
 

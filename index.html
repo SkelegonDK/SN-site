@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+    <link loading="preload" href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="glitch.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Screaming Naked</title>
 </head>
 
 <body>
+    <div id="splash">
+        <img loading="preload" id="splash-img" src="sn-logo-alpha.png" alt="">
+    </div>
     <div class="mobile">
-        <p class='text glitch-text' style="outline:none !important">You betrayed
-            me
+        <p class='text glitch-text glitch' data-text="You betrayed me" style="outline:none !important">
+            You betrayed me
         </p>
         <a onclick="window.open('https://www.facebook.com/Srrrinak/')" target="_self" rel="external">
             <img loading="lazy" src="face.jpg">
@@ -33,30 +37,30 @@
             <img loading="lazy" src="https://media.giphy.com/media/YmjleYhDTUiYw/giphy.gif">
         </a>
     </div>
-    <div id="message"> </div>
+    <div id="message"></div>
     <div id="screen">
         <div id="cube" class='cube'>
 
             <!-- cube images -->
-            <p id="1" class='face text' data-transform="translateZ(-400px)" style="outline:none !important">
-                You betrayed
-                me
+            <p id="1" class='face text' data-text="
+            You betrayed me" data-transform="translateZ(-400px)" style="outline:none !important">
+                You betrayed me
             </p>
 
             <img loading="lazy" alt="7"  id="2" src="mail-4-200.gif" class='face'
                 data-transform="rotateY(90deg) translateZ(-400px)">
 
 
-            <!-- <img loading="lazy" alt="7" id="3" src="https://media.giphy.com/media/PcVVoQTyPhoPu/giphy.gif" class='face'
-                data-transform="rotateY(-90deg) translateZ(-400px)"> -->
+             <img loading="lazy" alt="7" id="3" src="https://media.giphy.com/media/fFJcshbXsJH0s/giphy.gif" class='face'
+                data-transform="rotateY(-90deg) translateZ(-400px)"> 
             <img loading="lazy" alt="7" id="4" src="" class='face' data-transform="rotateY(180deg) translateZ(-400px)">
             <img loading="lazy" alt="7" id="5" src="sn-logo.png" class='face' data-transform="rotateX(90deg) translateZ(-300px)">
             <img loading="lazy" alt="7" id="6" src="https://media.giphy.com/media/SwffhF8CK0RTW/giphy.gif" class='face'
                 data-transform="rotateX(-90deg) translateZ(-300px)">
             <!-- bonus image -->
 
-            <!-- <img loading="lazy" id="7" src="https://media.giphy.com/media/PcVVoQTyPhoPu/giphy.gif" class='face'
-                data-transform="rotateY(180deg) translateZ(305px)" style="visibility:hidden"> -->
+             <img loading="lazy" id="7" src="https://media.giphy.com/media/fFJcshbXsJH0s/giphy.gif" class='face'
+                data-transform="rotateY(180deg) translateZ(305px)" style="visibility:hidden"> 
 
             <!-- buttons -->
             <a class="btn7" href="https://www.youtube.com/watch?v=cbtrWAyF9CU&list=PLrPmbwO-V0qFY4HNzpFglxE7LtCnO17aW"

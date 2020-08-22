@@ -1,7 +1,6 @@
 //TODO: consolidate html to JS loading
 // TODO: add Loading Splash Screen
-
-
+						 
 if ($(window).width() > 600) {
 	//Add your javascript for large screens here
 	! function () {
@@ -143,12 +142,12 @@ if ($(window).width() > 600) {
 		//
 		var cube = document.getElementById("cube");
 		var faces = document.querySelectorAll(".face");
-		console.log(faces);
+		
 
 		// ---- read computed matrix ----
 		var getComputedMatrix = function (elem) {
 
-			console.log(elem);
+			
 			var computedStyle = getComputedStyle(elem, null);
 
 			var val = computedStyle.transform || computedStyle.webkitTransform;
