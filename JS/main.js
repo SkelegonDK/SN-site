@@ -1,14 +1,18 @@
 //TODO: consolidate html to JS loading
 // TODO: add Loading Splash Screen
+"use strict";
+
 $( document ).ready(function() {
 
 	console.log("loading");
 
 	if ($(window).width() > 600) {
+		//Add your javascript for large screens here
 		console.log("3D enabled");
-	
+		
 	$( "#screen" ).delay( 1000 ).fadeIn( "slow", function() {
-		init3D()
+		init3D();
+		console.log("loader done");
 	  });
 	} else {
 		console.log("mobile");
@@ -16,10 +20,8 @@ $( document ).ready(function() {
 });
 
 function init3D () {
-		//Add your javascript for large screens here
+		
 		! function () {
-
-			"use strict";
 			//
 			// ===== pointer library =====
 			//
