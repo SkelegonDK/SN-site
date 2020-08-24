@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+    <link loading="eager" href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/glitch.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -13,81 +13,85 @@
 </head>
 
 <body>
+    <div id="splash">
+        <img loading="eager" src="/images/sn-logo-alpha.png" alt="" srcset="">
+        <div class="glitch text loader" data-text="loader dit liv">loader dit liv</div>
+    </div>
     <div class="mobile">
         <a href="index.html">
-            <p class='text glitch-text glitch' data-text="
-            ødelæg dit liv" style="outline:none !important">
+            <p class='text glitch-text glitch' data-text="ødelæg dit liv" style="outline:none !important">
                 ødelæg dit liv
             </p>
         </a>
-        <img loading="lazy" src="images/Damien.JPG">
+        <img src="images/Damien.JPG">
         <p class='text glitch-text' style="outline:none !important">
             D4m13n
         </p>
-        <img loading="lazy" src="images/manze.JPG">
+        <img src="images/manze.JPG">
         <p class='text glitch-text' style="outline:none !important">
             M4n5
         </p>
-        <img loading="lazy" src="images/Razz.JPG" alt="">
+        <img src="images/Razz.JPG" alt="">
         <p class='text glitch-text' style="outline:none !important">
             R4zmu5
         </p>
-        <img loading="lazy" src="images/mikey.JPG">
+        <img src="images/mikey.JPG">
         <p class='text glitch-text' style="outline:none !important">
             M1k3y
         </p>
-        <img loading="lazy" src="images/Eric.JPG">
+        <img src="images/Eric.JPG">
         <p class='text glitch-text' style="outline:none !important">
             3r1c
         </p>
     </div>
+    
     <div id="message"> </div>
     <div id="screen">
         <div id="cube" class='cube'>
 
             <!-- cube images -->
             <p id="1" class='face text' data-text="
-            ødelæg dit liv" data-transform="translateX(-250px) translateZ(-500px)"  style="outline:none !important">
+            ødelæg dit liv" data-transform="translateX(-250px) translateZ(-500px)" style="outline:none !important">
                 ødelæg dit liv
             </p>
 
-            <img loading="lazy" id="2" alt="7" src="Eric.JPG" class='face' data-transform="rotateY(90deg) translateZ(-400px)">
+            <img id="2" alt="7" src="images/Eric.JPG" class='face' data-transform="rotateY(90deg) translateZ(-400px)">
 
 
-            <img loading="lazy" id="3" alt="7" src="images/Razz.JPG" class='face' data-transform="rotateY(-90deg) translateZ(-400px)">
-            <img loading="lazy" id="4" alt="7" src="images/Damien.JPG" class='face' data-transform="translateZ(-400px)" >
-            <img loading="lazy" id="5" alt="7" src="images/mikey.JPG" class='face' data-transform="rotateX(90deg) translateZ(-300px)">
-            <img loading="lazy" id="6" alt="7" src="images/manze.JPG" class='face' data-transform="rotateX(-90deg) translateZ(-300px)">
+            <img id="3" alt="7" src="images/Razz.JPG" class='face' data-transform="rotateY(-90deg) translateZ(-400px)">
+            <img id="4" alt="7" src="images/Damien.JPG" class='face' data-transform="translateZ(-400px)">
+            <img id="5" alt="7" src="images/mikey.JPG" class='face' data-transform="rotateX(90deg) translateZ(-300px)">
+            <img id="6" alt="7" src="images/manze.JPG" class='face' data-transform="rotateX(-90deg) translateZ(-300px)">
             <!-- bonus image -->
 
-            <img loading="lazy" id="7" src="images/GlitchArt_export.MOV" class='face' data-transform="rotateY(180deg) translateZ(305px)"
-                style="visibility:hidden">
+            <img id="7" src="images/GlitchArt_export.MOV" class='face'
+                data-transform="rotateY(180deg) translateZ(305px)" style="visibility:hidden">
 
             <!-- buttons -->
-            <a  href="#" target="_self" rel="external">
-                <img loading="lazy" src="images/guitar.png" class='face button' alt="6"
+            <a href="#" target="_self" rel="external">
+                <img src="images/guitar.png" class='face button' alt="6"
                     data-transform="translateY(-80px) translateZ(-340px) scale(0.5)">
             </a>
 
             <a href="#" target="_self" rel="external">
-                <img loading="lazy" src="images/mic.png" class='face button' alt="4"
+                <img src="images/mic.png" class='face button' alt="4"
                     data-transform="translateX(-200px) translateY(-80px) translateZ(-340px) scale(0.5)">
             </a>
             <a href="#" target="_self" rel="external">
-                <img loading="lazy" src="images/bass.png" class='face button' alt="3"
+                <img src="images/bass.png" class='face button' alt="3"
                     data-transform="translateX(200px) translateY(-80px) translateZ(-340px) scale(0.5)">
             </a>
             <a href="#" target="_self" rel="external">
-                <img loading="lazy" class='face button' src="images/synth.png" alt="2"
+                <img class='face button' src="images/synth.png" alt="2"
                     data-transform="translateY(80px) translateZ(-340px) scale(0.5)">
             </a>
-           
+
             <a href="#" target="_self" rel="external">
-                <img loading="lazy" src="images/drums.png" class='face button' alt="5"
+                <img src="images/drums.png" class='face button' alt="5"
                     data-transform="translateX(-200px) translateY(80px) translateZ(-340px) scale(0.5)">
             </a>
             <a href="index.html">
-                <img loading="lazy" src="images/sn-logo.png" class='face button' alt="7"
+                <img src="images/sn-logo.png" class='face button' alt="7"
                     data-transform="translateX(200px) translateY(80px) translateZ(-340px) scale(0.5)">
             </a>
 
