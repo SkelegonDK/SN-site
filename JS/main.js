@@ -13,6 +13,11 @@ $( document ).ready(function() {
 	$( "#screen" ).delay( 1000 ).fadeIn( "slow", function() {
 		init3D();
 		console.log("loader done");
+		$('#drengevideo').mouseover(function(){
+			$(this).get(0).play();
+		}).mouseout(function(){
+			$(this).get(0).pause();
+		})
 	  });
 	} else {
 		console.log("mobile");
